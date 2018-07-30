@@ -1,7 +1,7 @@
 
 var base_url = 'https://apibodegas.loadingplay.com/',
 checkout_url = 'https://pay.loadingplay.com/';
-var app_public = 9;
+var app_public = 'tika';
 
 function isLocalHost() {
     return document.location.href.indexOf('localhost') != -1;
@@ -12,7 +12,7 @@ function isDevelopment() {
 }
 
 // configure for each enviroment
-if ( isLocalHost() ) 
+if ( isLocalHost() )
 {
     base_url = 'https://apibodegas.loadingplay.com/';
     checkout_url = 'https://pay.loadingplay.com/';
@@ -20,8 +20,8 @@ if ( isLocalHost() )
     // base_url = 'http://localhost:8520/';
     // checkout_url = 'http://localhost:8522/';
     // app_public= 13;
-} 
-else if ( isDevelopment() ) 
+}
+else if ( isDevelopment() )
 {
     base_url = 'https://apibodegas.loadingplay.com/';
     checkout_url = 'https://pay.loadingplay.com/';
